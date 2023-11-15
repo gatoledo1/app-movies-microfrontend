@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap");
+
+:root {
+  --strong-blue: hsl(223, 36%, 24%);
+  --blue: hsl(223, 36%, 16%);
+  --blue-2: #1e3497;
+  --background: hsl(224, 32%, 9%);
+  --light: hsl(223, 36%, 94%);
+}
+
+body {
+  --sb-track-color: #181c27;
+  --sb-thumb-color: #222d4c;
+  --sb-size: 12px;
+
+  scrollbar-color: var(--sb-thumb-color) var(--sb-track-color);
+}
+
+body::-webkit-scrollbar {
+  width: var(--sb-size);
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--sb-track-color);
+  border-radius: 12px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: var(--sb-thumb-color);
+  border-radius: 12px;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  background-color: var(--background);
+}
+
+.App {
+  max-width: 1200px;
+  color: #fff;
+  margin: 2rem auto 3rem;
+}
+
+.container {
+  padding: 0 1rem;
+
+  @media (min-width: 501px) {
+    margin-left: 70px;
+  }
+  @media (min-width: 768px) {
+    padding: 0 1rem 0 2rem;
+  }
+}
+
+.section-title {
+  color: hsl(223, 36%, 84%);
+  text-align: center;
+  @media (min-width: 922px) {
+    text-align: left;
+  }
+}
